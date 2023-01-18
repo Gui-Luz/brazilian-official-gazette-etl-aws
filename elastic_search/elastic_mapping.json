@@ -1,0 +1,84 @@
+{
+"settings": {
+    "analysis": {
+      "analyzer": {
+        "default": {
+          "type": "portuguese"
+        }
+      }
+    }
+  },
+"mappings" : {
+      "properties" : {
+        "artType" : {
+          "type" : "keyword",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "content" : {
+          "type" : "text"
+        },
+        "editionNumber" : {
+          "type" : "text"
+        },
+        "fullText" : {
+          "type" : "text"
+        },
+        "hierarchyLevelSize" : {
+          "type" : "long"
+        },
+        "hierarchyList" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "hierarchyStr" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "numberPage" : {
+          "type" : "long"
+        },
+        "pubDate" : {
+          "type" : "date"
+        },
+        "pubName" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "pubOrder" : {
+          "type" : "keyword"
+        },
+        "subTitulo" : {
+          "type" : "text"
+        },
+        "title" : {
+          "type" : "text"
+        },
+        "titulo" : {
+          "type" : "text"
+        },
+        "urlTitle" : {
+          "type" : "keyword"
+        }
+      }
+    }
+}
